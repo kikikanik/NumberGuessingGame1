@@ -11,7 +11,7 @@ public class numberGuessingGameCode {
 		int guessCounter = 1;
 		//	int randomNumber2 = 1 + rand.nextInt(5);
 
-		System.out.println ("Welcome to the Number Guessing Game! Try to find out our secret. Our secret number is between 0 and 5");
+		System.out.println ("Welcome to the Number Guessing Game! Try to find out our secret. Our secret number is between 0 and 5 inclusive");
 
 		System.out.print("Enter your guess Now:");
 		guess = in.nextInt();
