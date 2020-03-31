@@ -1,0 +1,26 @@
+import java.util.Scanner;
+import java.util.Random;
+
+public class Version1 {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner (System.in);
+		Random rand = new Random();
+
+		int randomNumber = rand.nextInt(5);
+		int guess;
+		int tryAgain = 1;
+		System.out.println ("Welcome to the Number Guessing Game! Try to find out our secret. Our secret number is between 0 and 5 inclusive");
+
+		System.out.print("Enter your guess now: ");
+		guess = in.nextInt();
+		while (guess != randomNumber) {
+			System.out.print("Sorry, your guess was wrong. Enter a new guess now: ");
+			guess = in.nextInt();
+		}
+		if (guess == randomNumber) {
+			System.out.println("Our secret has been found out! Congradulations");
+		}
+		in.close();
+	}
+}
