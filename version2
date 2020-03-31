@@ -9,7 +9,6 @@ public class Version1 {
 
 		int randomNumber = rand.nextInt(5);
 		int guess;
-		int tryAgain = 1;
 		System.out.println ("Welcome to the Number Guessing Game! Try to find out our secret. Our secret number is between 0 and 5 inclusive");
 
 		System.out.print("Enter your guess now: ");
